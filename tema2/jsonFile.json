@@ -1,0 +1,23 @@
+[
+  {
+    "ID": 1,
+    "Nume": "Timisoreana",
+    "DataFabricatie": "2012-12-12T00:00:00",
+    "ProcentAlcool": 5.0,
+    "Pret": 4.50
+  },
+  {
+    "ID": 2,
+    "Nume": "Ursus",
+    "DataFabricatie": "2015-12-12T00:00:00",
+    "ProcentAlcool": 5.0,
+    "Pret": 4.80
+  },
+  {
+    "ID": 6,
+    "Nume": "Stejar",
+    "DataFabricatie": "2012-12-12T00:00:00",
+    "ProcentAlcool": 5.2,
+    "Pret": 5.40
+  }
+]

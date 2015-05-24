@@ -1,0 +1,60 @@
+﻿@model IEnumerable<tema2.Models.Bere>
+
+@{
+    ViewBag.Title = "Checkout";
+   
+}
+
+<h2>Checkout</h2>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nume)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataFabricatie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProcentAlcool)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pret)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+  
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nume)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataFabricatie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProcentAlcool)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pret)
+        </td>
+          <td>
+           
+            
+        </td>
+    </tr>
+    
+   
+}
+   
+           
+        
+     @Html.ActionLink("Back", "Index") 
+      @Html.ActionLink("Clear Cart", "clearCart") 
+</table>
+
+    <h2> Pret total:
+    @ViewData["pretTotal"]
+
+</h2>
+
